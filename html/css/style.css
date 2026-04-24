@@ -526,6 +526,13 @@ font-size: clamp(2rem, 5vw, 3rem);
   /* Fallback: if no image loaded, show a placeholder */
   background: var(--bg-secondary);
 }
+@media (max-width: 768px) {
+  .hero-photo {
+    margin-top: 69px; 
+    height: 230px;
+    width: 230px;
+  }
+}
 /* If image fails, show initials */
 .hero-photo::after {
   content: 'SV';
