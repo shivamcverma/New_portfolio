@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Software Engineer & Python Developer — building scalable backends, APIs, and automation tools. Available for freelance and full-time opportunities." />
+  <meta name="keywords" content="Python Developer, Software Engineer, Flask, FastAPI, Web Scraping, Backend Developer, Portfolio" />
+  <meta name="author" content="Shivam Verma" />
+  <meta property="og:title" content="Shivam Verma — Python Developer" />
+  <meta property="og:description" content="Software Engineer specializing in Python, Flask, FastAPI, and automation." />
+  <meta property="og:type" content="website" />
+  <title>Shivam Verma — Python Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="html/css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-bracket">&lt;</span>CVM<span class="brand-bracket">/&gt;</span>
+      </a>
+      <div class="d-flex align-items-center gap-3 ms-auto">
+        <!-- Dark/Light Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-hire" href="#contact">Hire Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero-section" id="hero">
+    <!-- Animated grid background -->
+    <div class="hero-grid"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <p class="hero-eyebrow">
+            <span class="eyebrow-line"></span>
+            Available for opportunities
+          </p>
+          <h1 class="hero-name">
+            <!-- ✏️ CUSTOMIZE: Change to Shivam Verma -->
+            Hi, I'm <br/><span class="name-highlight">Shivam Verma</span>
+          </h1>
+          <div class="hero-title-wrap">
+            <span class="hero-title-static">I build things as a </span>
+            <span class="hero-title-typed" id="typedTitle"></span>
+          </div>
+          <p class="hero-tagline">
+            Crafting robust Python backends, intelligent automation & scalable APIs — 
+            turning complex problems into elegant, deployable solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary-custom">
+              <i class="bi bi-lightning-charge-fill me-2"></i>Hire Me
+            </a>
+            <!-- ✏️ CUSTOMIZE: Link to your actual resume PDF -->
+            <a href="assets/resume.pdf" download class="btn btn-outline-custom">
+              <i class="bi bi-file-earmark-arrow-down me-2"></i>Download CV
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">5mo</span>
+              <span class="stat-label">Professional Exp.</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">MCA</span>
+              <span class="stat-label">Graduate</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center mb-5 mb-lg-0">
+          <div class="hero-image-wrap">
+            <div class="hero-image-glow"></div>
+            <!-- ✏️ CUSTOMIZE: Replace with your photo path -->
+            <img src="scroll/assets/shivam.jpg.jpg" alt="Shivam Verma — Python Developer" class="hero-photo" id="profileImg" />
+            <div class="hero-image-badge">
+              <i class="bi bi-code-slash"></i>
+              <span>Open to Work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <a href="#about" class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="about-img-wrap">
+            <img src="assets/profile.jpg" alt="About" class="about-photo" />
+            <div class="about-img-decoration"></div>
+            <!-- Quick info card -->
+            <div class="about-info-card glass-card">
+              <div class="info-row">
+                <i class="bi bi-geo-alt-fill"></i>
+                <!-- ✏️ CUSTOMIZE: Your location -->
+                <span>Your City, India</span>
+              </div>
+              <div class="info-row">
+                <i class="bi bi-briefcase-fill"></i>
+                <span>Python Developer</span>
+              </div>
+              <div class="info-row">
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>MCA Graduate</span>
+              </div>
+              <div class="info-row">
+                <i class="bi bi-circle-fill text-success"></i>
+                <span>Available for hire</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <p class="section-eyebrow">About Me</p>
+          <h2 class="section-title">Building the web, <br/>one API at a time</h2>
+          <p class="about-bio">
+            <!-- ✏️ CUSTOMIZE: Your bio -->
+            I'm a passionate Python Developer with a Master's in Computer Applications (MCA), 
+            currently working professionally and delivering real-world software solutions. 
+            I specialize in backend development with Python, building RESTful APIs with 
+            Flask and FastAPI, and automating workflows with web scraping tools.
+          </p>
+          <p class="about-bio">
+            I believe great software is invisible — it just works. My focus is always on 
+            writing clean, maintainable code that scales. I'm constantly learning, currently 
+            diving deeper into system design and cloud deployment.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Problem Solver</span>
+            <span class="tag">API Architect</span>
+            <span class="tag">Automation Enthusiast</span>
+            <span class="tag">Clean Code Advocate</span>
+            <span class="tag">Lifelong Learner</span>
+          </div>
+          <div class="mt-4 d-flex gap-3 flex-wrap">
+            <a href="#contact" class="btn btn-primary-custom btn-sm-custom">
+              <i class="bi bi-send-fill me-2"></i>Get in Touch
+            </a>
+            <a href="#projects" class="btn btn-ghost-custom btn-sm-custom">
+              <i class="bi bi-grid-fill me-2"></i>See My Work
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section class="section-padding section-alt" id="skills">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <p class="section-eyebrow">What I Work With</p>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">A curated toolkit built through real projects and continuous learning</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Frontend Skills -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-category glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i class="bi bi-layout-text-window-reverse"></i>
+              </div>
+              <div>
+                <h4 class="skill-cat-title">Frontend</h4>
+                <p class="skill-cat-sub">UI & Web Layer</p>
+              </div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="bi bi-filetype-html"></i> HTML5</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="bi bi-filetype-css"></i> CSS3</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="bi bi-filetype-js"></i> JavaScript</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-category glass-card skill-featured">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon featured-icon">
+                <i class="bi bi-server"></i>
+              </div>
+              <div>
+                <h4 class="skill-cat-title">Backend</h4>
+                <p class="skill-cat-sub">Core Expertise</p>
+              </div>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="bi bi-filetype-py"></i> Python</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill accent" data-width="88"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="bi bi-lightning-fill"></i> Django</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill accent" data-width="82"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="bi bi-rocket-fill"></i> FastAPI</span>
+                  <span class="skill-pct">78%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill accent" data-width="78"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="bi bi-diagram-3-fill"></i> Flask</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill accent" data-width="85"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-category glass-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div>
+                <h4 class="skill-cat-title">Tooling & Other</h4>
+                <p class="skill-cat-sub">Automation & More</p>
+              </div>
+            </div>
+            <div class="skill-chips">
+              <span class="chip"><i class="bi bi-globe2"></i> Web Scraping</span>
+              <span class="chip"><i class="bi bi-robot"></i> Selenium</span>
+              <span class="chip"><i class="bi bi-code-square"></i> BeautifulSoup</span>
+              <span class="chip"><i class="bi bi-arrow-repeat"></i> Requests</span>
+              <span class="chip"><i class="bi bi-diagram-2"></i> OOP</span>
+              <span class="chip"><i class="bi bi-terminal-fill"></i> C Language</span>
+              <span class="chip"><i class="bi bi-git"></i> Git & GitHub</span>
+              <span class="chip"><i class="bi bi-database-fill"></i> SQL</span>
+              <span class="chip"><i class="bi bi-database-fill"></i> MySQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EXPERIENCE SECTION
+  ============================================================ -->
+  <section class="section-padding" id="experience">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <p class="section-eyebrow">Career</p>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="timeline">
+
+            <!-- Experience Item 1 (Current) -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-dot active-dot"></div>
+              <div class="timeline-card glass-card">
+                <div class="timeline-header">
+                  <div>
+                    <!-- ✏️ CUSTOMIZE: Your actual company name and role -->
+                    <h4 class="job-title">Python Developer</h4>
+                    <p class="company-name">
+                      <i class="bi bi-building me-1"></i>
+                      Achyuta Software Pvt. Ltd.
+                    </p>
+                  </div>
+                  <div class="text-end">
+                    <span class="badge-current">Current</span>
+                    <p class="job-duration">Dec 2024 – Present · 5 months</p>
+                  </div>
+                </div>
+                <p class="job-desc">
+                  <!-- ✏️ CUSTOMIZE: Your actual responsibilities -->
+                  Working as a Python Developer building backend services and automation tools 
+                  for production use cases. Collaborating with cross-functional teams to 
+                  design and ship scalable API solutions.
+                </p>
+                <ul class="job-responsibilities">
+                  <li>Developed and maintained RESTful APIs using Flask and FastAPI frameworks</li>
+                  <li>Built web scraping pipelines using BeautifulSoup and Selenium for data extraction</li>
+                  <li>Designed and integrated database schemas with SQLAlchemy ORM</li>
+                  <li>Implemented authentication systems (JWT, session-based) for secure endpoints</li>
+                  <li>Collaborated using Git for version control and participated in code reviews</li>
+                  <li>Documented APIs and wrote unit tests to ensure code reliability</li>
+                </ul>
+                <div class="job-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">SQLAlchemy</span>
+                  <span class="tech-tag">Selenium</span>
+                  <span class="tech-tag">Git</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education Entry -->
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="timeline-dot edu-dot"></div>
+              <div class="timeline-card glass-card">
+                <div class="timeline-header">
+                  <div>
+                    <h4 class="job-title">Master of Computer Applications (MCA)</h4>
+                    <p class="company-name">
+                      <i class="bi bi-mortarboard me-1"></i>
+                      <!-- ✏️ CUSTOMIZE: Your university name -->
+                      Your University Name
+                    </p>
+                  </div>
+                  <div class="text-end">
+                    <span class="badge-edu">Education</span>
+                    <!-- ✏️ CUSTOMIZE: Your graduation year -->
+                    <p class="job-duration">2022 – 2024</p>
+                  </div>
+                </div>
+                <p class="job-desc">
+                  Specialized in software engineering, algorithms, database management, 
+                  and web technologies. Graduated with strong fundamentals in both 
+                  theoretical CS and practical application development.
+                </p>
+                <div class="job-tech-stack">
+                  <span class="tech-tag">Data Structures</span>
+                  <span class="tech-tag">DBMS</span>
+                  <span class="tech-tag">Web Dev</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">C</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section class="section-padding section-alt" id="projects">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <p class="section-eyebrow">My Work</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Selected projects that showcase my skills and problem-solving approach</p>
+      </div>
+
+      <!-- 
+        ✏️ HOW TO ADD A NEW PROJECT:
+        Copy one .project-card div block below and update:
+        - data-category attribute (for future filtering)
+        - project-img src
+        - project-number
+        - project-title, project-desc
+        - tech-tags
+        - GitHub / Demo links
+      -->
+      <div class="row g-4" id="projectsGrid">
+
+        <!-- Project 1 -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card glass-card" data-category="backend">
+            <div class="project-img-wrap">
+              <!-- ✏️ CUSTOMIZE: Replace with your project screenshot -->
+              <div class="project-img-placeholder">
+                <i class="bi bi-api"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="https://github.com/shivamcverma" target="_blank" class="overlay-btn"><i class="bi bi-github"></i></a>
+                <a href="#" target="_blank" class="overlay-btn"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-number">01</span>
+              <h4 class="project-title">REST API with FastAPI</h4>
+              <p class="project-desc">
+                A production-ready RESTful API built with FastAPI featuring JWT authentication, 
+                role-based access control, and automated Swagger documentation. Deployed with 
+                Uvicorn on a Linux server.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">SQLAlchemy</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="bi bi-github me-1"></i>Source</a>
+                <a href="#" class="project-link accent-link"><i class="bi bi-play-circle me-1"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card glass-card" data-category="scraping">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder scrape-bg">
+                <i class="bi bi-robot"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" target="_blank" class="overlay-btn"><i class="bi bi-github"></i></a>
+                <a href="#" target="_blank" class="overlay-btn"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-number">02</span>
+              <h4 class="project-title">Web Scraping Automation</h4>
+              <p class="project-desc">
+                Automated data extraction pipeline using Selenium and BeautifulSoup to scrape 
+                dynamic websites, process data, and export to structured CSV/JSON formats. 
+                Includes proxy rotation and anti-detection measures.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Selenium</span>
+                <span class="tech-tag">BeautifulSoup</span>
+                <span class="tech-tag">Requests</span>
+                <span class="tech-tag">Pandas</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="bi bi-github me-1"></i>Source</a>
+                <a href="#" class="project-link accent-link"><i class="bi bi-play-circle me-1"></i>Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card glass-card" data-category="fullstack">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder flask-bg">
+                <i class="bi bi-flask"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" target="_blank" class="overlay-btn"><i class="bi bi-github"></i></a>
+                <a href="#" target="_blank" class="overlay-btn"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-number">03</span>
+              <h4 class="project-title">Flask Full-Stack Web App</h4>
+              <p class="project-desc">
+                A feature-rich web application built with Flask featuring user authentication, 
+                CRUD operations, form validation, and a Bootstrap-powered responsive frontend. 
+                Deployed on Render.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Jinja2</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="bi bi-github me-1"></i>Source</a>
+                <a href="#" class="project-link accent-link"><i class="bi bi-play-circle me-1"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card glass-card" data-category="automation">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder auto-bg">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" target="_blank" class="overlay-btn"><i class="bi bi-github"></i></a>
+                <a href="#" target="_blank" class="overlay-btn"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-number">04</span>
+              <h4 class="project-title">Task Automation Bot</h4>
+              <p class="project-desc">
+                Python bot automating repetitive workflows — file processing, email notifications, 
+                and data transformation. Reduced manual effort by 80% for targeted use cases 
+                using scheduled execution.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">smtplib</span>
+                <span class="tech-tag">Schedule</span>
+                <span class="tech-tag">OS</span>
+                <span class="tech-tag">Logging</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="bi bi-github me-1"></i>Source</a>
+                <a href="#" class="project-link accent-link"><i class="bi bi-play-circle me-1"></i>Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+
+      <div class="text-center mt-5" data-aos="fade-up">
+        <!-- ✏️ CUSTOMIZE: Your GitHub profile URL -->
+        <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline-custom">
+          <i class="bi bi-github me-2"></i>View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Have a project in mind? Let's talk about it.</p>
+      </div>
+
+      <div class="row g-5 align-items-stretch">
+
+        <!-- Contact Info -->
+        <div class="col-lg-4" data-aos="fade-right">
+          <div class="contact-info-wrap">
+            <div class="contact-info-item glass-card">
+              <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <p class="contact-label">Email</p>
+                <!-- ✏️ CUSTOMIZE -->
+                <a href="mailto:your@email.com" class="contact-value">your@email.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item glass-card">
+              <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <p class="contact-label">Phone</p>
+                <!-- ✏️ CUSTOMIZE -->
+                <a href="tel:+919999999999" class="contact-value">+91 99999 99999</a>
+              </div>
+            </div>
+            <div class="contact-info-item glass-card">
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">Your City, India</p>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links glass-card">
+              <p class="contact-label mb-3">Find me on</p>
+              <div class="social-grid">
+                <!-- ✏️ CUSTOMIZE: Your actual social profile URLs -->
+                <a href="https://github.com/yourusername" target="_blank" class="social-btn" aria-label="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-btn" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" class="social-btn" aria-label="Twitter">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="mailto:your@email.com" class="social-btn" aria-label="Email">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-8" data-aos="fade-left">
+          <div class="contact-form-wrap glass-card">
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group-custom">
+                    <label for="contactName">Shivam Verma</label>
+                    <input type="text" id="contactName" class="input-custom" placeholder="John Doe" required />
+                    <div class="invalid-msg">Please enter Shivam Verma</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group-custom">
+                    <label for="contactEmail">Email Address</label>
+                    <input type="email" id="contactEmail" class="input-custom" placeholder="john@example.com" required />
+                    <div class="invalid-msg">Please enter a valid email</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" class="input-custom" placeholder="Project discussion / Job opportunity..." />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" class="input-custom" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+                    <div class="invalid-msg">Please write a message</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100" id="submitBtn">
+                    <span id="submitText"><i class="bi bi-send-fill me-2"></i>Send Message</span>
+                    <span id="submitLoading" style="display:none"><i class="bi bi-hourglass-split me-2"></i>Sending...</span>
+                  </button>
+                </div>
+                <div class="col-12">
+                  <div id="formSuccess" class="form-success" style="display:none">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    Message sent! I'll get back to you within 24 hours.
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="navbar-brand">
+            <span class="brand-bracket">&lt;</span>CVM<span class="brand-bracket">/&gt;</span>
+          </a>
+          <p>Python Developer · Building things that matter.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="footerYear"></span> CVM. Crafted with <i class="bi bi-heart-fill text-danger"></i> in India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BACK TO TOP BUTTON
+  ============================================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="variables/js/app.js"></script>
+</body>
+</html>
